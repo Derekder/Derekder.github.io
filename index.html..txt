@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEREK | Portafolio Profesional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logotipo DEREK - Rueda Dentada">
+        
+        <h1>DEREK: Diseñando el futuro, pieza a pieza.</h1>
+    </header>
+</body>
+</html>

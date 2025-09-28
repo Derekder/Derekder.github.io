@@ -1,0 +1,29 @@
+/* Colores profesionales para un Ingeniero de Software */
+body {
+    background-color: #2C3E50; /* 60% Fondo Azul Marino Oscuro */
+    color: #ECF0F1; /* 30% Color de texto Gris Claro */
+    font-family: 'Open Sans', sans-serif; 
+    text-align: center; 
+    padding: 50px;
+    margin: 0;
+    /* Centrado en la pantalla */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    /* Tamaño del logo */
+    width: 200px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    /* 10% Color de acento Naranja */
+    color: #E67E22; 
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif; 
+}
