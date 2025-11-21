@@ -4,13 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEREK | Portafolio Profesional</title>
+    <!-- Punto 3: Favicon -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    
+    <!-- Fuentes Web (Punto de UX/UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="logo.svg" alt="Logotipo DEREK - Rueda Dentada">
-        
-        <h1>DEREK: Diseñando el futuro, pieza a pieza.</h1>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.svg" alt="Logotipo DEREK" class="nav-logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio" data-translate="nav_home">Inicio</a></li>
+            <li><a href="#sobre-mi" data-translate="nav_about">Sobre Mí</a></li>
+            <li><a href="#valores" data-translate="nav_values">Valores</a></li>
+            <li><a href="#galeria" data-translate="nav_gallery">Portafolio</a></li>
+            <li><a href="#contacto" data-translate="nav_contact">Contacto</a></li>
+        </ul>
+        <!-- Punto 17: Cambio de Idioma -->
+        <div class="lang-switch-container">
+            <input type="checkbox" id="language-toggle">
+            <label for="language-toggle" class="lang-label">
+                <span class="lang-text">ES</span>
+                <span class="lang-text">EN</span>
+            </label>
+        </div>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sección 1: Héroe (Inicio) -->
+    <header id="inicio" class="hero">
+        <div class="hero-content fade-in">
+            <img src="logo.svg" alt="Rueda Dentada Derek" class="hero-logo floating-anim">
+            <h1 data-translate="hero_title">DEREK</h1>
+            <h2 data-translate="hero_role">Ingeniero de Software</h2>
+            <p class="slogan" data-translate="hero_slogan">Diseñando el futuro, pieza a pieza.</p>
+            
+            <div class="cta-buttons">
+                <!-- Punto 15: Descarga PDF -->
+                <a href="curriculum.pdf" download class="btn btn-primary">
+                    <span data-translate="btn_cv">Descargar CV</span> <i class="fas fa-download"></i>
+                </a>
+                <a href="#galeria" class="btn btn-secondary" data-translate="btn_work">Ver Trabajos</a>
+            </div>
+        </div>
     </header>
+
+    <!-- Sección 2: Sobre Mí (Misión y Visión) -->
+    <section id="sobre-mi" class="section">
+        <h2 class="section-title" data-translate="about_title">Sobre Mí</h2>
+        <div class="container grid-2">
+            <div class="card-glass">
+                <i class="fas fa-bullseye icon-large"></i>
+                <h3 data-translate="mission_title">Misión</h3>
+                <p data-translate="mission_text">
+                    Aplicar las mejores prácticas de ingeniería de software para construir soluciones digitales que resuelvan problemas reales, contribuyendo con precisión y funcionalidad en cada proyecto que desarrolle.
+                </p>
+            </div>
+            <div class="card-glass">
+                <i class="fas fa-eye icon-large"></i>
+                <h3 data-translate="vision_title">Visión</h3>
+                <p data-translate="vision_text">
+                    Convertirme en un desarrollador senior que lidere equipos y proyectos de alto impacto, diseñando y manteniendo arquitecturas de software innovadoras y eficientes a largo plazo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Valores (Cumpliendo las 5 secciones) -->
+    <section id="valores" class="section alt-bg">
+        <h2 class="section-title" data-translate="values_title">Mis Valores</h2>
+        <div class="container grid-4">
+            <div class="value-card">
+                <i class="fas fa-check-double"></i>
+                <h4 data-translate="val1_title">Precisión</h4>
+                <p data-translate="val1_text">Garantizar que el código y el diseño cumplan estrictamente con los requisitos.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-brain"></i>
+                <h4 data-translate="val2_title">Aprendizaje</h4>
+                <p data-translate="val2_text">Mantenerse actualizado con las nuevas tecnologías y metodologías.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h4 data-translate="val3_title">Resolución</h4>
+                <p data-translate="val3_text">Ver los desafíos técnicos como oportunidades para diseñar soluciones ingeniosas.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-handshake"></i>
+                <h4 data-translate="val4_title">Respeto</h4>
+                <p data-translate="val4_text">Promuevo un ambiente de colaboración donde se valoran las ideas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Galería Interactiva (Punto 10) -->
+    <section id="galeria" class="section">
+        <h2 class="section-title" data-translate="gallery_title">Proyectos Destacados</h2>
+        <div class="gallery-container">
+            <!-- Proyecto 1 -->
+            <div class="project-item">
+                <div class="project-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Código">
+                <div class="project-info">
+                    <h3>Sistema de Gestión</h3>
+                    <p>Java, Spring Boot, React</p>
+                    <a href="https://github.com/Derekder" target="_blank" class="btn-small">Ver Código</a>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="project-item">
+                <div class="project-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Web Design">
+                <div class="project-info">
+                    <h3>Diseño UI/UX</h3>
+                    <p>Figma, HTML5, CSS3</p>
+                    <a href="https://github.com/Derekder" target="_blank" class="btn-small">Ver Diseño</a>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="project-item">
+                <div class="project-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Data">
+                <div class="project-info">
+                    <h3>Análisis de Datos</h3>
+                    <p>Python, Pandas, SQL</p>
+                    <a href="https://github.com/Derekder" target="_blank" class="btn-small">Ver Reporte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 5: Contacto (Punto 12) -->
+    <section id="contacto" class="section alt-bg">
+        <h2 class="section-title" data-translate="contact_title">Contacto</h2>
+        <div class="container contact-wrapper">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>dchavarriam@ucenfotec.ac.cr</p>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="http://www.linkedin.com/in/derek-adrian-chavarria-mata-34b431387/" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div class="info-item">
+                    <i class="fab fa-github"></i>
+                    <a href="http://github.com/Derekder" target="_blank">github.com/Derekder</a>
+                </div>
+            </div>
+            
+            <!-- Formulario (Usando Formspree para funcionalidad sin backend propio) -->
+            <form action="https://formspree.io/f/mbljwgqz" method="POST" class="contact-form">
+                <div class="form-group">
+                    <input type="text" name="name" required placeholder=" ">
+                    <label data-translate="form_name">Nombre</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder=" ">
+                    <label data-translate="form_email">Correo Electrónico</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" required placeholder=" "></textarea>
+                    <label data-translate="form_msg">Mensaje</label>
+                </div>
+                <button type="submit" class="btn btn-primary" data-translate="form_btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 DEREK. Diseñando el futuro.</p>
+    </footer>
+
+    <!-- Punto 13: WhatsApp -->
+    <a href="https://wa.me/50671470696" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Punto 14: Scroll Top -->
+    <button id="scrollTopBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
 </body>
 </html>
