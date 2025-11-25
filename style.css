@@ -190,15 +190,15 @@ h1, h2, h3, h4 {
 .section { padding: 80px 10%; }
 .alt-bg { background-color: rgba(0,0,0,0.2); }
 
-/* 1. Estilo para el Título Principal (ya existe) */
+/* 1. Estilo para el Título Principal (Ajuste de margen) */
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 20px; /* Reducimos el margen para acercarlo al subtítulo */
+    margin-bottom: 15px; /* Reducido a 15px */
     position: relative;
     display: inline-block;
     width: 100%;
-    color: var(--accent-color); /* Agregamos color de acento al título */
+    color: var(--accent-color);
 }
 
 .section-title::after {
@@ -210,18 +210,18 @@ h1, h2, h3, h4 {
     margin: 10px auto 0;
 }
 
-/* 2. NUEVO: Estilo para el Subtítulo */
+/* 2. Estilo para el Subtítulo (Ajuste de espaciado: ¡80px de margen inferior!) */
 .section-subtitle {
     text-align: center;
     font-size: 1.15rem;
-    max-width: 800px; /* Ancho máximo para que no se extienda demasiado */
-    margin: 0 auto 60px; /* Centrado y margen grande para separar del contenido */
-    color: #BDC3C7; /* Un gris más suave que el texto principal */
+    max-width: 750px; 
+    margin: 0 auto 80px; /* Margen inferior clave para el espacio */
+    padding: 0 10px; 
+    color: #BDC3C7; 
     line-height: 1.8;
-    /* --- Mejoras de Estética --- */
-    font-weight: 300; /* Hace el texto más ligero y elegante */
-    letter-spacing: 0.5px; /* Sutil espaciado para mejor lectura */
-    transition: color 0.3s ease; /* Para transiciones suaves en caso de hover */
+    font-weight: 300; 
+    letter-spacing: 0.5px; 
+    transition: color 0.3s ease; 
 }
 
 .container { width: 100%; max-width: 1200px; margin: 0 auto; }
