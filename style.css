@@ -218,6 +218,10 @@ h1, h2, h3, h4 {
     margin: 0 auto 60px; /* Centrado y margen grande para separar del contenido */
     color: #BDC3C7; /* Un gris más suave que el texto principal */
     line-height: 1.8;
+    /* --- Mejoras de Estética --- */
+    font-weight: 300; /* Hace el texto más ligero y elegante */
+    letter-spacing: 0.5px; /* Sutil espaciado para mejor lectura */
+    transition: color 0.3s ease; /* Para transiciones suaves en caso de hover */
 }
 
 .container { width: 100%; max-width: 1200px; margin: 0 auto; }
